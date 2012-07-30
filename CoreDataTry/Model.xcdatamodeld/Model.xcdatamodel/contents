@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="searchBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="BookTag" syncable="YES"/>
+        <relationship name="writenBy" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Author" syncable="YES"/>
+    </entity>
+    <entity name="BookTag" representedClassName="BookTag" syncable="YES">
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Author" positionX="250" positionY="138" width="128" height="60"/>
+        <element name="Book" positionX="81" positionY="126" width="128" height="90"/>
+        <element name="BookTag" positionX="-144" positionY="156" width="153" height="60"/>
+    </elements>
+</model>
