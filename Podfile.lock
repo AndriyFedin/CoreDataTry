@@ -1,0 +1,5 @@
+PODS:
+  - SVProgressHUD (0.7)
+
+DEPENDENCIES:
+  - SVProgressHUD

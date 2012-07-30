@@ -8,6 +8,12 @@
 
 #import "CoreDataLayer.h"
 
+@interface CoreDataLayer ()
+- (NSPersistentStoreCoordinator*)persistentCoordinator;
+- (NSURL *)applicationDocumentsDirectory;
+@end
+
+
 @implementation CoreDataLayer
 
 @synthesize objModel = _objModel;

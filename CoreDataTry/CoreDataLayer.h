@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface CoreDataLayer : NSObject
 
 @property (nonatomic, strong) NSManagedObjectModel *objModel;
@@ -16,5 +15,6 @@
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 + (CoreDataLayer*)getInstance;
+
 
 @end

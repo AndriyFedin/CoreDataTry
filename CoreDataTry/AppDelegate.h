@@ -17,4 +17,6 @@
 @property (strong, nonatomic) AuthorsController *viewController;
 @property (nonatomic, strong) UITabBarController *tabBarController;
 
+- (void)stuffDB;
+
 @end
